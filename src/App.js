@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ToDoProvider } from "./ToDoContext";
+import { AppUI } from "./AppUI";
+
+/*const defaultToDos = [
+  {text: 'Programar', completed: true},
+  {text: 'Hacer la tarea', completed: false},
+  {text: 'Estudiar', completed: false},
+  {text: 'Dormir', completed: false},
+]*/
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <ToDoProvider>
+    <AppUI/>
+  </ToDoProvider>
   );
 }
 
