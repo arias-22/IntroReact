@@ -28,7 +28,7 @@ function ToDoForm(){
     }
     return (
         <form onSubmit={onsubmit}>
-            <label>...</label>
+            <label>Agregar nueva tarea</label>
                 <textarea
                 placeholder="Escribe una tarea"
                 value={newToDoValue}
